@@ -1,9 +1,7 @@
-FROM mhart/alpine-node
+FROM node:20-alpine3.17
 
 ENV NODE_ENV production
 ENV PATH /usr/local/bin:$PATH
-
-RUN ln -s /usr/local/bin/node /usr/local/bin/nodejs
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
